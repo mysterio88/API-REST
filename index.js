@@ -60,7 +60,7 @@ app.post('/signup', (req, res) => {
     const newUser = {
      username: req.body.username,
      password: hashedPassword,
-     email: req.body.email,
+    // email: req.body.email,
  }
  userDb.push(newUser);
  res.sendStatus(201);
