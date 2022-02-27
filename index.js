@@ -44,11 +44,11 @@ passport.use(new BasicStrategy(
 ));
 
 app.get('/', (req, res) => {
-  res.send('Tämä on viesti tulevaisuudesta!')
+  res.send('Tulevaisuuden sinä täällä!')
 })
 
 app.get('/protectedResource', passport.authenticate('basic', { session: false}),(req, res) =>{
-    res.send("Tämä ei ole sinun kotisi!")
+    res.send("Tämä ei ole sinun kotisi vai mita!")
 
 })
 
