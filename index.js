@@ -44,7 +44,7 @@ passport.use(new BasicStrategy(
 ));
 
 app.get('/', (req, res) => {
-  res.send('Hellou World! Tai sitten sinä joka tätä luet ja alat tsiikailee mitä tämä jäbä on tehnyt, ei muutaku onnia yritykselle :)')
+  res.send('Hellou World! Tai sitten sinä joka tätä luet ja alat tsiikailee mitä tämä jäbä on tehnyt, ei muutaku onnia yritykselle. Niin ja siis siis jos haluat helpottaa niin username Jukka ja password testi, voit toki luoda itekki ne.:)')
 })
 
 app.get('/protectedResource', passport.authenticate('basic', { session: false}),(req, res) =>{
