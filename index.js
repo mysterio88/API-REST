@@ -44,7 +44,7 @@ passport.use(new BasicStrategy(
 ));
 
 app.get('/', (req, res) => {
-  res.send('Tulevaisuuden sinä täällä!')
+  res.send('Hellou World! Tai sitten sinä joka tätä luet ja alat tsiikailee mitä tämä jäbä on tehnyt, ei muutaku onnia yritykselle :)')
 })
 
 app.get('/protectedResource', passport.authenticate('basic', { session: false}),(req, res) =>{
