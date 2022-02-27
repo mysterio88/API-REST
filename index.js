@@ -66,6 +66,11 @@ app.post('/signup', (req, res) => {
  res.sendStatus(201);
 })
 
+app.get('/users', (req, res) => {
+
+    res.json(userDb);
+})
+
 app.post('/items', passport.authenticate('basic', { session: false}),(req, res) => {
 
     var dt = dateTime.create();
